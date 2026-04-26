@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kantara Fragrance</title>
+
+<style>
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background: #0f172a;
+    color: white;
+}
+
+/* Header */
+header {
+    background: linear-gradient(45deg, #065f46, #10b981);
+    padding: 20px;
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+/* Navbar */
+nav {
+    display: flex;
+    justify-content: center;
+    background: #022c22;
+}
+nav a {
+    padding: 15px 20px;
+    color: white;
+    text-decoration: none;
+}
+nav a:hover {
+    background: #065f46;
+}
+
+/* Hero */
+.hero {
+    text-align: center;
+    padding: 60px 20px;
+}
+.hero h1 {
+    font-size: 42px;
+}
+.hero p {
+    font-size: 18px;
+}
+
+/* Products */
+.products {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+    padding: 30px;
+}
+.card {
+    background: #134e4a;
+    border-radius: 15px;
+    padding: 20px;
+    width: 220px;
+    text-align: center;
+    transition: 0.3s;
+}
+.card:hover {
+    transform: scale(1.05);
+}
+.card img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* Button */
+button {
+    background: #10b981;
+    border: none;
+    padding: 10px 15px;
+    color: white;
+    margin-top: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+/* WhatsApp Button */
+.whatsapp {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #25D366;
+    color: white;
+    padding: 15px;
+    border-radius: 50%;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #022c22;
+}
+</style>
+
+</head>
+
+<body>
+
+<header>Kantara Fragrance</header>
+
+<nav>
+<a href="#">Home</a>
+<a href="#">Products</a>
+<a href="#">Contact</a>
+</nav>
+
+<section class="hero">
+<h1>Luxury Perfumes</h1>
+<p>Feel Fresh, Stay Confident</p>
+</section>
+
+<section class="products">
+
+<div class="card">
+<img src="https://via.placeholder.com/200">
+<h3>Royal Oud</h3>
+<p>��999</p>
+<button onclick="order()">Order Now</button>
+</div>
+
+<div class="card">
+<img src="https://via.placeholder.com/200">
+<h3>Fresh Mist</h3>
+<p>₹799</p>
+<button onclick="order()">Order Now</button>
+</div>
+
+<div class="card">
+<img src="https://via.placeholder.com/200">
+<h3>Dark Musk</h3>
+<p>₹1199</p>
+<button onclick="order()">Order Now</button>
+</div>
+
+</section>
+
+<!-- WhatsApp Button -->
+<a class="whatsapp" href="https://wa.me/919518870207">💬</a>
+
+<footer>
+<p>Contact: 9518870207</p>
+<p>© 2026 Kantara Fragrance</p>
+</footer>
+
+<script>
+function order(){
+    alert("Order on WhatsApp!");
+}
+</script>
+
+</body>
+</html>
